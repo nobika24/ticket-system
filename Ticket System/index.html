@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>IT Ticket System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>IT Support Ticket System
+        <h3 id="dashboard"></h3>
+    </h1>
+<input type="text" id="search" placeholder="Search tickets..." onkeyup="searchTickets()">
+    <input type="text" id="issue" placeholder="Enter your issue">
+
+    <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+
+    <button class="submit-btn" onclick="addTicket()">Submit Ticket</button>
+
+    <h2>Tickets:</h2>
+    <ul id="ticketList"></ul>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
